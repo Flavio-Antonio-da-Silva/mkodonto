@@ -8,6 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  // Ajustado para o nome real do repositório no GitHub com as barras
-  base: '/mkodonto/', 
+
 })
