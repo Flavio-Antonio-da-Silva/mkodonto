@@ -50,14 +50,14 @@ const Navbar = () => {
 
       {/* Menu Mobile */}
       {isOpen && (
-        <div className="md:hidden bg-[#FFDAB9] border-b border-gray-100 text-[#F0F8FF] animate-in fade-in slide-in-from-top-5 duration-300">
+        <div className="md:hidden bg-[#FFDAB9] border-b border-gray-100 text-[#041355] animate-in fade-in slide-in-from-top-5 duration-300">
           <div className="px-4 pt-2 pb-6 space-y-2">
             <a href="#inicio" onClick={() => setIsOpen(false)} className="block py-3 font-medium border-b border-gray-50">Início</a>
             <a href="#servicos" onClick={() => setIsOpen(false)} className="block py-3 font-medium border-b border-gray-50">Serviços</a>
-            <a href="#portfolio" onClick={() => setIsOpen(false)} className="block py-3 text-slate-600 font-medium border-b border-gray-50">Modelos</a>
+            <a href="#portfolio" onClick={() => setIsOpen(false)} className="block py-3  font-medium border-b border-gray-50">Galeria de Designs</a>
             <div className="pt-4">
-              <a href="#contato" onClick={() => setIsOpen(false)} className="block w-full bg-blue-600 text-center py-4 rounded-xl font-bold">
-                Clique e fale conosco!
+              <a href="https://wa.me/5521988841154?text=Ol%C3%A1!%20Vi%20o%20site%20e%20preciso%20de%20or%C3%A7amento! " onClick={() => setIsOpen(false)} className="block w-full bg-[#006400] text-[#DCDCDC] text-center py-4 rounded-xl font-bold">
+                Chame agora no WhataApp!
               </a>
             </div>
           </div>

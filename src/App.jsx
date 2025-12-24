@@ -6,13 +6,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Registrar o plugin
 gsap.registerPlugin(ScrollTrigger);
 
-import Navbar from './components/Navbar'; 
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Servicos from './components/Servicos';
 import Escolha from './components/Escolha';
 import Faq from './components/Faq';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/layout/WhatsAppButton';
 
 function App() {
 
@@ -21,14 +22,14 @@ function App() {
     const sections = document.querySelectorAll('.gsap-section');
 
     sections.forEach((section) => {
-      gsap.fromTo(section, 
-        { 
-          opacity: 0, 
-          y: 50 
-        }, 
-        { 
-          opacity: 1, 
-          y: 0, 
+      gsap.fromTo(section,
+        {
+          opacity: 0,
+          y: 50
+        },
+        {
+          opacity: 1,
+          y: 0,
           duration: 1.8,
           ease: "power2.out",
           scrollTrigger: {
@@ -58,6 +59,7 @@ function App() {
         <section className="gsap-section"><Faq /></section>
         <section className="gsap-section"><Contato /></section>
       </main>
+      <WhatsAppButton />
 
       <Footer />
     </div>
