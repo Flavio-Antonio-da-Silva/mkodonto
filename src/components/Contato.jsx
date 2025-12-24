@@ -28,32 +28,34 @@ const Contato = () => {
   };
 
   return (
-    <section id="contato" className="py-24 bg-slate-50">
+    <section id="contato" className="py-24 bg-linear-to-t from-blue-600 via-blue-500 to-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Lado Esquerdo: Texto de Venda */}
           <div>
             <h2 className="text-4xl font-black text-slate-900 mb-6 leading-tight">
-              Pronto para dominar o <span className="text-blue-600">mercado odontológico</span> no RJ?
+              Pronto para dominar o <span className="text-[#FFD700]">mercado odontológico</span> no RJ?
             </h2>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            <p className="text-lg text-[#F0F8FF] mb-8 leading-relaxed">
               Não deixe sua clínica invisível. Solicite um orçamento personalizado e receba uma análise de concorrência gratuita do seu bairro em até 24h.
             </p>
             
             <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shadow-sm">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                </div>
-                <span className="text-slate-700 font-bold">contato@mkodonto.com.br</span>
+
+              <div>
+                <a 
+                href="https://wa.me/21977496651?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20MK%20Dental%20para%20minha%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition-all shadow-md shadow-green-200 active:scale-95">
+                 <img src="/src/assets/whatsapp_icon.png" alt="WhatsApp" className="w-8 h-8 mr-2 inline-block" /> Clique para tirar qualquer dúvida via WhatApp
+                </a>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 shadow-sm">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                </div>
-                <span className="text-slate-700 font-bold">Rio de Janeiro, RJ</span>
-              </div>
+
+              
+              <p className="mt-4 text-gray-900 text-sm">
+                Pronto antendimento em horário comecial ou em até 24h
+              </p>
+             
+            
             </div>
           </div>
 
@@ -66,7 +68,7 @@ const Contato = () => {
               <input type="hidden" name="replyto" value="%email%" />
 
               <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Seu Nome Completo</label>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wide">Seu Nome Completo</label>
                 <input 
                   type="text" 
                   name="name" 
@@ -77,7 +79,7 @@ const Contato = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">E-mail Profissional</label>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wide">SEU MELHOR E-MAIL</label>
                 <input 
                   type="email" 
                   name="email" 
@@ -88,21 +90,21 @@ const Contato = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Como podemos ajudar?</label>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wide">FALE COMO PODEMOS TE AJUDAR?</label>
                 <textarea 
                   name="message" 
                   rows="4" 
                   required 
                   placeholder="Conte-nos sobre sua clínica ou bairro no RJ (ex: Botafogo, Barra, Centro)..."
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all outline-none resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-200 focus:ring-4 focus:ring-blue-500/10 transition-all outline-none resize-none"
                 ></textarea>
               </div>
 
               <button 
                 type="submit" 
-                className="w-full bg-blue-600 text-white font-black py-4 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98] text-lg uppercase tracking-wider"
+                className="w-full bg-blue-600 text-white font-black py-4 rounded-xl hover:bg-yellow-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98] text-lg uppercase tracking-wider"
               >
-                Enviar Solicitação
+               SOLICITAR Orçamento Grátis
               </button>
               
               {result && (

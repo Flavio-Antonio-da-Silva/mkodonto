@@ -35,15 +35,15 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="py-24 bg-linear-to-b from-sky-400 via-blue-500 to-blue-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Título com foco em Transparência */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
-            Transparência e <span className="text-blue-600">Dados Técnicos</span>
+            Perguntas Frequêntes
           </h2>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed font-impact">
             Respondemos às principais dúvidas com dados de mercado de 2025 para que você tome a decisão mais lucrativa para sua clínica.
           </p>
         </div>
@@ -54,7 +54,7 @@ const Faq = () => {
             <div 
               key={i} 
               className={`border rounded-2xl transition-all duration-300 ${
-                aberto === i ? 'border-blue-400 bg-blue-50/30' : 'border-slate-100 bg-white hover:border-slate-300'
+                aberto === i ? 'border-blue-600 bg-sky-50/30' : 'border-slate-100 bg-gray-200 hover:border-slate-300'
               }`}
             >
               <button 

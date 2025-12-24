@@ -77,14 +77,14 @@ const Escolha = () => {
   };
 
   return (
-    <section ref={sectionRef} id="portfolio" className="py-24 bg-slate-950 text-white">
+    <section ref={sectionRef} id="portfolio" className="py-24 bg-linear-to-b from-blue-100 via-slate-950 to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-            Nossos Templates de <span className="text-blue-500">Alta Conversão</span>
+          <h2 className="text-4xl md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
+            Nossos Templates de <span className="text-[#f8e53b]">Alta Conversão</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg leading-relaxed">
             Estruturas validadas para o mercado odontológico. Escolha o design que melhor comunica a autoridade do seu consultório no Rio.
           </p>
         </div>
