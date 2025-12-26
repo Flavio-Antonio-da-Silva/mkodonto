@@ -30,11 +30,11 @@ function App() {
         {
           opacity: 1,
           y: 0,
-          duration: 1.8,
+          duration: 1.6,
           ease: "power2.out",
           scrollTrigger: {
             trigger: section,
-            start: "top 40%", // Começa quando o topo da seção atinge 85% da tela
+            start: "top 60%", // Começa quando o topo da seção atinge 85% da tela
             toggleActions: "play none none reverse", // "reverse" faz sumir ao subir o scroll
           }
         }

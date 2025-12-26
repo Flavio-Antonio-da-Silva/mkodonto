@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const perguntas = [
   {
@@ -29,22 +33,63 @@ const perguntas = [
 
 const Faq = () => {
   const [aberto, setAberto] = useState(null);
+  const sectionRef = useRef(null);
+  const titleRef = useRef(null);
+  const accordionRef = useRef([]);
 
   const toggle = (i) => {
     setAberto(aberto === i ? null : i);
   };
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animação do Título
+      gsap.fromTo(titleRef.current, 
+        { y: 30, opacity: 0 },
+        { 
+          y: 0, 
+          opacity: 1, 
+          duration: 1, 
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: titleRef.current,
+            start: "top 90%",
+          }
+        }
+      );
+
+      // Animação dos Itens do FAQ
+      const items = accordionRef.current.filter(Boolean);
+      gsap.fromTo(items, 
+        { x: -20, opacity: 0 },
+        { 
+          x: 0, 
+          opacity: 1, 
+          duration: 0.6, 
+          stagger: 0.1, 
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: items[0],
+            start: "top 85%",
+          }
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="faq" className="py-24 bg-linear-to-b from-sky-400 via-blue-500 to-blue-200">
+    <section ref={sectionRef} id="faq" className="py-24 bg-linear-to-b from-sky-400 via-blue-500 to-blue-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Título com foco em Transparência */}
-        <div className="text-center mb-16">
+        {/* Cabeçalho */}
+        <div ref={titleRef} className="text-center mb-16" style={{ opacity: 0 }}>
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
             Perguntas Frequêntes
           </h2>
-          <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed font-impact">
-            Respondemos às principais dúvidas com dados de mercado de 2025 para que você tome a decisão mais lucrativa para sua clínica.
+          <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed">
+            Respondendo às principais dúvidas com dados de mercado de 2025 para que você tome a decisão mais lucrativa para sua clínica.
           </p>
         </div>
 
@@ -53,8 +98,10 @@ const Faq = () => {
           {perguntas.map((item, i) => (
             <div 
               key={i} 
+              ref={el => accordionRef.current[i] = el}
+              style={{ opacity: 0 }}
               className={`border rounded-2xl transition-all duration-300 ${
-                aberto === i ? 'border-blue-600 bg-sky-50/30' : 'border-slate-100 bg-gray-200 hover:border-slate-300'
+                aberto === i ? 'border-blue-600 bg-sky-50/30 shadow-lg' : 'border-slate-100 bg-gray-200 hover:border-slate-300'
               }`}
             >
               <button 
@@ -85,9 +132,6 @@ const Faq = () => {
             </div>
           ))}
         </div>
-
-        
-
       </div>
     </section>
   );

@@ -15,30 +15,54 @@ const cases = [
   { id: 8, imgName: 'case8.png', url: "https://consultorio-mocha.vercel.app/", nome: "Mocha Consultório" },
 ];
 
-// O Vite resolve isso em tempo de build
 const imageModules = import.meta.glob('../assets/cases/*.{png,jpg,jpeg}', { eager: true });
 
 const Escolha = () => {
   const sectionRef = useRef(null);
+  const headerRef = useRef(null);
   const cardsRef = useRef([]);
 
   useEffect(() => {
-    const cards = cardsRef.current.filter(Boolean);
-    
-    gsap.fromTo(cards, 
-      { y: 60, opacity: 0 },
-      { 
-        y: 0, 
-        opacity: 1, 
-        duration: 1, 
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
+    // Garante que o ScrollTrigger recalcule posições
+    ScrollTrigger.refresh();
+
+    const ctx = gsap.context(() => {
+      // 1. Animação do Cabeçalho (Título e Texto)
+      gsap.fromTo(headerRef.current, 
+        { y: 30, opacity: 0 },
+        { 
+          y: 0, 
+          opacity: 1, 
+          duration: 1, 
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 90%",
+          }
         }
+      );
+
+      // 2. Animação dos Cards em Cascata
+      const validCards = cardsRef.current.filter(Boolean);
+      if (validCards.length > 0) {
+        gsap.fromTo(validCards, 
+          { y: 60, opacity: 0 },
+          { 
+            y: 0, 
+            opacity: 1, 
+            duration: 0.8, 
+            stagger: 0.1, // Efeito cascata rápido entre os 8 modelos
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: validCards[0],
+              start: "top 85%",
+            }
+          }
+        );
       }
-    );
+    }, sectionRef);
+
+    return () => ctx.revert();
   }, []);
 
   const handleMouseMove = (e, index) => {
@@ -52,7 +76,6 @@ const Escolha = () => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
     
-    // Suavizamos a rotação para um efeito mais elegante
     const rotateX = (y - centerY) / 12;
     const rotateY = (centerX - x) / 12;
 
@@ -80,7 +103,8 @@ const Escolha = () => {
     <section ref={sectionRef} id="portfolio" className="py-24 bg-linear-to-b from-blue-100 via-slate-950 to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center mb-20">
+        {/* Cabeçalho com Ref */}
+        <div ref={headerRef} className="text-center mb-20" style={{ opacity: 0 }}>
           <h2 className="text-4xl md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
             Nossos Templates de <span className="text-[#f8e53b]">Alta Conversão</span>
           </h2>
@@ -91,7 +115,6 @@ const Escolha = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {cases.map((projeto, idx) => {
-            // Buscamos a imagem dinamicamente no objeto do Vite
             const imgPath = `../assets/cases/${projeto.imgName}`;
             const imageSrc = imageModules[imgPath]?.default;
 
@@ -105,7 +128,7 @@ const Escolha = () => {
                 onMouseMove={(e) => handleMouseMove(e, idx)}
                 onMouseLeave={() => handleMouseLeave(idx)}
                 className="group relative block rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden shadow-2xl"
-                style={{ transformStyle: 'preserve-3d' }}
+                style={{ transformStyle: 'preserve-3d', opacity: 0 }} // Começa invisível para o ScrollTrigger
               >
                 {/* Banner de "Ver Site" no hover */}
                 <div className="absolute inset-0 bg-blue-600/40 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 flex flex-col items-center justify-center backdrop-blur-sm">
@@ -115,7 +138,6 @@ const Escolha = () => {
                   <span className="mt-4 font-bold text-sm tracking-widest uppercase">Visualizar Modelo</span>
                 </div>
 
-                {/* Imagem */}
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={imageSrc} 
@@ -124,7 +146,6 @@ const Escolha = () => {
                   />
                 </div>
 
-                {/* Info */}
                 <div className="p-5 border-t border-slate-800 flex justify-between items-center">
                   <h3 className="font-bold text-slate-200 group-hover:text-blue-400 transition-colors">
                     {projeto.nome}

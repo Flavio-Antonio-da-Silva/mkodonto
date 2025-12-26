@@ -1,6 +1,6 @@
 // src/components/layout/WhatsAppButton.jsx
 import { useEffect } from "react";
-import whatsappIcon from "/src/assets/whatsapp_icon.png";
+// REMOVIDO: import whatsappIcon from "../public/whatsapp_icon.png";
 import { gsap } from "gsap";
 
 export default function WhatsAppButton() {
@@ -28,16 +28,17 @@ export default function WhatsAppButton() {
         className="
           whatsapp-btn group relative flex items-center justify-center
           w-10 h-10 sm:w-16 sm:h-16
-          bg-green-500 rounded-full shadow-[0_0_25px_rgba(0,255,0,0.5)]
-          hover:shadow-[0_0_35px_rgba(0,255,0,0.8)]
+          bg-green-500 rounded-full shadow-[0_0_25px_rgba(34,197,94,0.5)]
+          hover:shadow-[0_0_35px_rgba(34,197,94,0.8)]
           hover:scale-125 transition-all duration-300
-          animate-pulse
+          animate-bounce
         "
       >
+        {/* Aqui o src="/" já aponta diretamente para a pasta public */}
         <img
-          src={whatsappIcon}
+          src="/whatsapp_icon.png" 
           alt="WhatsApp Icon"
-          className="w-10 sm:w-12 group-hover:animate-ping"
+          className="w-10 sm:w-12 group-hover:rotate-12 transition-transform"
         />
       </a>
     </div>
