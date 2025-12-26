@@ -52,7 +52,7 @@ const Contato = () => {
 
               
               <p className="mt-4 text-gray-900 text-sm">
-                Pronto antendimento em horário comecial ou em até 24h
+                Pronto antendimento 
               </p>
              
             
@@ -95,7 +95,7 @@ const Contato = () => {
                   name="message" 
                   rows="4" 
                   required 
-                  placeholder="Conte-nos sobre sua clínica ou bairro no RJ (ex: Botafogo, Barra, Centro)..."
+                  placeholder="Conte-nos sobre sua clínica ou bairro no RJ (Fique à vontade para tirar qualquer dúvida! )..."
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-200 focus:ring-4 focus:ring-blue-500/10 transition-all outline-none resize-none"
                 ></textarea>
               </div>
