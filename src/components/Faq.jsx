@@ -88,7 +88,7 @@ const Faq = () => {
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
             Perguntas Frequêntes
           </h2>
-          <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed font-serif">
             Respondendo às principais dúvidas com dados de mercado de 2025 para que você tome a decisão mais lucrativa para sua clínica.
           </p>
         </div>
