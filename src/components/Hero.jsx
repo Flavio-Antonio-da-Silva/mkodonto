@@ -78,12 +78,12 @@ const Hero = () => {
               Foco em Dentistas do Rio de Janeiro 📍
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-              <span className="text-[#8A2BE2]">Aumente</span> sua carteira de pacientes ampliando sua presença digital no RJ com landing pages que 
-              <span className="text-[#FFFF00]"> convertem de verdade</span> na <span className="text-blue-800">MK</span>ODONTO
+              <span className="text-[#FFFF00]">Atraia</span> novos clientes de sua região para seu consultório e sai na frente dos concorrentes na sua área! 
+              <span className="text-[#FFFF00]"> Foco em público do Rio de Janeiro.</span> na <span className="text-blue-800">MK</span>ODONTO
             </h1>
             <p className="mt-6 text-lg text-gray-800 leading-relaxed">
               Como dentista no Rio de Janeiro, você sabe que a concorrência é feroz, e que sem uma presença digital forte, perde leads para quem já investe online.
-              <span className="text-[#DAA520]"> <strong>Implementação rápida</strong></span>, com 1 ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong> </span>incluso.
+              <span className="text-[#008000]"> <strong>Implementação rápida</strong></span>, com 1 ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong> </span>incluso.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">

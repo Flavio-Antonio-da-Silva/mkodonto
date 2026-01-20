@@ -33,7 +33,7 @@ const servicosData = [
       "Copywriting Sob Medida: Redação ou revisão de textos para páginas, anúncios ou posts;",
       "Consultoria Estratégica: análise de marketing digital, com planos acionáveis baseados em dados reais;",
       "Otimização de Google My Business;",
-      "Setup ou update de perfil para visibilidade em mapas, incluindo reviews e fotos — crucial no RJ, onde 70% das buscas odontológicas."
+      "Setup ou update de perfil para visibilidade em mapas, incluindo reviews e fotos — crucial no RJ, onde 70% das buscas odontológicas são realizadas via smartphone."
     ],
     price: "R$ 82,00/h ",
     detail: "CÁLCULO FEITO POR ESTIMATIVA DE HORAS TRABALHADAS",
@@ -104,11 +104,11 @@ const Servicos = () => {
         <div ref={headerRef} className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Sua Página Sob Medida! Otimizada Para Clientes da Sua Região{" "}
-            <span className="text-yellow-400">Conversão de leads Comprovada</span>
+            <span className="text-[#FFFF00]">Conversão de leads Comprovada</span>
           </h2>
           <p className="mt-6 text-lg text-[#252525] leading-relaxed">
-            No RJ, com +40 mil dentistas disputando pacientes, 40% dos autônomos perdem leads por falta de presença online efetiva.
-            Nossos pacotes são <span className="font-semibold text-gray-800 italic">lean</span>: foco em conversão real e preços transparentes para lucro imediato.
+            No RJ, com +40 mil dentistas disputando pacientes, 57% dos autônomos perdem leads por falta de presença online efetiva.
+            Nossos pacotes são <span className="font-semibold text-gray-800 italic">eficientes</span>: foco em conversão real e custos pré-definidos e transparentes para melhor previsibilidade do retorno do seu investimento.
           </p>
         </div>
 
