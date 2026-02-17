@@ -106,7 +106,7 @@ const Escolha = () => {
         {/* Cabeçalho com Ref */}
         <div ref={headerRef} className="text-center mb-20" style={{ opacity: 0 }}>
           <h2 className="text-4xl md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
-            Nossos Templates de <span className="text-[#f8e53b] font-black">Alta Conversão</span>
+            Nossos Templates de <span className="text-[#CFB80E] font-black">Alta Conversão</span>
           </h2>
           <p className="text-[#191970] max-w-2xl mx-auto text-lg leading-relaxed font-serif">
             Estruturas validadas para o mercado odontológico. Escolha o design que melhor comunica a autoridade do seu consultório no Rio.

@@ -7,16 +7,16 @@ gsap.registerPlugin(ScrollTrigger);
 const servicosData = [
   {
     subtitle: "Mais Procurado",
-    title: "Landing Page Profissional",
-    description: "Criamos sua landing page personalizada do zero, integrando fotos reais do consultório, textos otimizados e SEO local para ranquear em buscas como 'Dentista no meu bairro' — trazendo leads quentes que iniciam a busca pelo seu serviço (pacientes que já querem agendar!). No smartphone, 90% escolhem os primeiros resultados do Google. Pronto em 7-10 dias, com aumento inicial de leads qualificados (baseado em cases reais de 2025). Retorno rápido do investimento com adesão de novos pacientes. Inclui 1 ano de hospedagem e domínio grátis, sem custos extras — foco racional em conversões orgânicas sem depender de anúncios caros. Aproveitando o crescimento de 10% ao ano no mercado odontológico no Rio de Janeiro em 2026.",
+    title: "Website Profissional",
+    description: "Criamos seu site personalizada do zero, integrando fotos reais do consultório, textos otimizados e SEO local para ranquear em buscas como 'Dentista no meu bairro' — trazendo leads quentes que iniciam a busca pelo seu serviço (pacientes que já querem agendar!). No smartphone, 90% escolhem os primeiros resultados do Google. Pronto em 7-10 dias, com aumento inicial de leads qualificados (baseado em cases reais de 2025). Retorno rápido do investimento com adesão de novos pacientes. Inclui 1 ano de hospedagem e domínio grátis, sem custos extras — foco racional em conversões orgânicas sem depender de anúncios caros. Aproveitando o crescimento de 10% ao ano no mercado odontológico no Rio de Janeiro em 2026.",
     price: "R$ 1.298",
-    detail: "CONTRATE AGORA EM JANEIRO E PAGUE APENAS R$ 1.089",
+    detail: "CONTRATE AGORA EM FEVEREIRO E PAGUE APENAS R$ 898,80",
     benefit: "Página 100% otimizada para smartphones e pesquisas feitas por seu serviço por clientes em seu bairro — capte leads quentes com ROI comprovado e sem gastos altos em ads.",
     icon: "💻",
     highlight: true 
   },
   {
-    subtitle: "Manutenção Inteligente",
+    subtitle: "Manutenção Inteligente (Opcional)",
     title: "Recorrência Mensal",
     description: "Oferecemos um serviço sob medida para sua clínica odontológica, priorizando o crescimento do seu negócio com retorno de seu investimento. Atualize fotos reais do consultório, personalize textos e layouts, lance campanhas sazonais como Black Friday ou Natal, e conte com consultoria de copy especializada para otimizar conversões. Pronto para ajustes mensais, trazendo marketing orgânico contínuo na sua região (baseado em cases 2025/2026, com foco em leads quentes via SEO local). Trazendo competitividade local perante seus concorrentes.",
     price: "R$ 273/mês",
@@ -29,6 +29,7 @@ const servicosData = [
     title: "Serviços Sob Demanda",
     subtitle: "Sob Demanda",
     description: [
+      "Chatbot personalizado para atendimento via site e/ou WhatsApp;",
       "Edição de Imagens em Figma: Ajustes profissionais em fotos ou materiais visuais, garantindo estética clean;",
       "Copywriting Sob Medida: Redação ou revisão de textos para páginas, anúncios ou posts;",
       "Consultoria Estratégica: análise de marketing digital, com planos acionáveis baseados em dados reais;",
@@ -104,7 +105,7 @@ const Servicos = () => {
         <div ref={headerRef} className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Sua Página Sob Medida! Otimizada Para Clientes da Sua Região{" "}
-            <span className="text-[#FFFF00]">Conversão de leads Comprovada</span>
+            <span className="text-[#CFB80E]">Converta visualisações em atendimentos!</span>
           </h2>
           <p className="mt-6 text-lg text-[#252525] leading-relaxed">
             No RJ, com +40 mil dentistas disputando pacientes, 57% dos autônomos perdem leads por falta de presença online efetiva.

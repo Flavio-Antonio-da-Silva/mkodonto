@@ -78,8 +78,8 @@ const Hero = () => {
               Foco em Dentistas do Rio de Janeiro 📍
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-              <span className="text-[#FFFF00]">Atraia</span> novos clientes de sua região para seu consultório e sai na frente dos concorrentes na sua área! 
-              <span className="text-[#FFFF00]"> Foco em público do Rio de Janeiro.</span> na <span className="text-blue-800">MK</span>ODONTO
+              <span className="text-[#CFB80E]">Atraia</span> novos clientes de sua região para seu consultório e sai na frente dos concorrentes na sua área! 
+              <span className="text-[#CFB80E]"> Foco em público do Rio de Janeiro.</span> na <span className="text-blue-800">MK</span>ODONTO
             </h1>
             <p className="mt-6 text-lg text-gray-800 leading-relaxed">
               Como dentista no Rio de Janeiro, você sabe que a concorrência é feroz, e que sem uma presença digital forte, perde leads para quem já investe online.
