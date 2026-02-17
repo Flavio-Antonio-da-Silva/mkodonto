@@ -20,7 +20,7 @@ const servicosData = [
     title: "Recorrência Mensal",
     description: "Oferecemos um serviço sob medida para sua clínica odontológica, priorizando o crescimento do seu negócio com retorno de seu investimento. Atualize fotos reais do consultório, personalize textos e layouts, lance campanhas sazonais como Black Friday ou Natal, e conte com consultoria de copy especializada para otimizar conversões. Pronto para ajustes mensais, trazendo marketing orgânico contínuo na sua região (baseado em cases 2025/2026, com foco em leads quentes via SEO local). Trazendo competitividade local perante seus concorrentes.",
     price: "R$ 273/mês",
-    detail: "ASSINE AGORA EM JANEIRO E GANHE 1 MÊS GRÁTIS — INVISTA NO SEU SUCESSO!",
+    detail: "ASSINE AGORA EM FEVEREIRO E GANHE 1 MÊS GRÁTIS — INVISTA NO SEU SUCESSO!",
     benefit: "Adaptação contínua para campanhas e personalizações, com consultoria dedicada — transforme leads em pacientes fiéis e maximize ROI sem custos surpresa.",
     icon: "🔄",
     highlight: false 
