@@ -84,7 +84,7 @@ const Hero = () => {
             </h1>
             <p className="font-playfair mt-6 text-lg text-[#1E3636] font- leading-relaxed">
               Como dentista no Rio de Janeiro, você sabe que a concorrência é feroz, e que sem uma presença digital forte, perde leads para quem já investe online.
-              <span className="text-[#008000]"> <strong>Implementação rápida</strong></span>, com 1 ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong> </span>incluso.
+              <span className="text-[#008000]"> <strong>Implementação rápida</strong></span>, com <span className="font-sans">1</span> ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong> </span>incluso.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
