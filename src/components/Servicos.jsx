@@ -9,8 +9,8 @@ const servicosData = [
     subtitle: "Mais Procurado",
     title: "Website Profissional",
     description: "Criamos seu site personalizada do zero, integrando fotos reais do consultório, textos otimizados e SEO local para ranquear em buscas como 'Dentista no meu bairro' — trazendo leads quentes que iniciam a busca pelo seu serviço (pacientes que já querem agendar!). No smartphone, 90% escolhem os primeiros resultados do Google. Pronto em 7-10 dias, com aumento inicial de leads qualificados (baseado em cases reais de 2025). Retorno rápido do investimento com adesão de novos pacientes. Inclui 1 ano de hospedagem e domínio grátis, sem custos extras — foco racional em conversões orgânicas sem depender de anúncios caros. Aproveitando o crescimento de 10% ao ano no mercado odontológico no Rio de Janeiro em 2026.",
-    price: "R$ 898,49",
-    detail: "CONTRATE AGORA EM FEVEREIRO E PAGUE APENAS R$ 497,80",
+    price: "R$ 479,49",
+    detail: "CONTRATE AGORA EM FEVEREIRO E PAGUE APENAS R$ 398,80",
     benefit: "Página 100% otimizada para smartphones e pesquisas feitas por seu serviço por clientes em seu bairro — capte leads quentes com ROI comprovado e sem gastos altos em ads.",
     icon: "💻",
     highlight: true 
@@ -106,7 +106,7 @@ const Servicos = () => {
         <div ref={headerRef} className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Sua Página Sob Medida! Otimizada Para Clientes da Sua Região{" "}
-            <span className="text-[#CFB80E]">Converta visualisações em atendimentos!</span>
+            <span className="text-[#FFD800]">Converta visualisações em atendimentos!</span>
           </h2>
           <p className="mt-6 text-lg text-[#252525] leading-relaxed">
             No RJ, com +40 mil dentistas disputando pacientes, 57% dos autônomos perdem leads por falta de presença online efetiva.

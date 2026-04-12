@@ -44,9 +44,9 @@ const Navbar = () => {
 
           {/* Menu Desktop */}
           <div className="hidden md:flex space-x-8 items-center font-medium">
-            <a href="#inicio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-red-200 hover:text-gray-900 transition-colors">Início</a>
-            <a href="#servicos" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-red-200 hover:text-gray-900 transition-colors">Serviços</a>
-            <a href="#portfolio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-red-200 hover:text-gray-900 transition-colors">Galeria de Designs</a>
+            <a href="#inicio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Início</a>
+            <a href="#servicos" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Serviços</a>
+            <a href="#portfolio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Galeria de Designs</a>
             <a 
               href="#contato" 
               className="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-bold hover:bg-green-500 transition-all shadow-md hover:shadow-blue-200 active:scale-95"
