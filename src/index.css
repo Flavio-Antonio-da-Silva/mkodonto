@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@import "@fontsource/playfair-display"; /* ou a variante que instalou */
+
+@theme {
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-bebas: "Bebas Neue", Georgia, serif;
+  --font-dmserif: "DM Serif Display", Georgia, serif, sans-serif;
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
 
 @layer base {
   :root {

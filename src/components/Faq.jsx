@@ -89,7 +89,7 @@ const Faq = () => {
             Perguntas Frequêntes
           </h2>
           <p className="text-slate-800 text-lg max-w-2xl mx-auto leading-relaxed font-serif">
-            Respondendo às principais dúvidas com dados de mercado de 2025 para que você tome a decisão mais lucrativa para sua clínica.
+            Respondendo às principais dúvidas com dados de mercado de<span className="font-sans"> 2025 </span>ra que você tome a decisão mais lucrativa para sua clínica.
           </p>
         </div>
 

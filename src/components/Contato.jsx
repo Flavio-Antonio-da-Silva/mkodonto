@@ -37,7 +37,7 @@ const Contato = () => {
             <h2 className="text-4xl font-black text-slate-900 mb-6 leading-tight">
               Pronto para dominar o <span className="text-[#FFD700]">mercado odontológico</span> no RJ?
             </h2>
-            <p className="text-lg text-[#F0F8FF] mb-8 leading-relaxed">
+            <p className="text-lg text-[#121129] font-bebas mb-8 leading-relaxed">
               Não deixe sua clínica invisível. Solicite um orçamento personalizado e receba uma análise de concorrência gratuita do seu bairro em até 24h.
             </p>
             
@@ -51,7 +51,7 @@ const Contato = () => {
               </div>
 
               
-              <p className="mt-4 text-gray-900 text-sm">
+              <p className="mt-4 text-gray-900 text-[25px] font-serif ">
                 Pronto antendimento 
               </p>
              

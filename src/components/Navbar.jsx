@@ -37,13 +37,13 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-black text-blue-600 tracking-tighter">
-              MK<span className="text-slate-800">ODONTO</span>
+            <span className="font-dmserif text-2xl font-black text-blue-600 tracking-tighter">
+              MK<span className=" text-slate-800">ODONTO</span>
             </span>
           </div>
 
           {/* Menu Desktop */}
-          <div className="hidden md:flex space-x-8 items-center font-medium">
+          <div className="hidden md:flex space-x-8 items-center font-medium text-[20px] font-roboto">
             <a href="#inicio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Início</a>
             <a href="#servicos" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Serviços</a>
             <a href="#portfolio" className="text-slate-700 rounded-full py-1.5 px-3 hover:bg-[#FFD800] hover:text-gray-900 transition-colors">Galeria de Designs</a>
