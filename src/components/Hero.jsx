@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import VideoHero from './VideoHero';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -86,6 +87,9 @@ const Hero = () => {
               Como dentista no Rio de Janeiro, você sabe que a concorrência é feroz, e que sem uma presença digital forte, perde leads para quem já investe online.
               <span className="text-[#008000]"> <strong>Implementação rápida</strong></span>, com <span className="font-sans">1</span> ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong> </span>incluso.
             </p>
+
+            {/* VÍDEO INSERIDO AQUI */}
+            <VideoHero />
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a href="#contato" className="px-8 py-4 bg-blue-600 text-white rounded-lg font-bold text-lg hover:bg-blue-900 transition-all text-center shadow-lg active:scale-95">
