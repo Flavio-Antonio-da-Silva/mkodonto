@@ -105,7 +105,7 @@ const Escolha = () => {
         
         {/* Cabeçalho com Ref */}
         <div ref={headerRef} className="text-center mb-20 max-w-2xl mx-auto rp-3 p-8 rounded-full bg-linear-to-t  from-blue-50/50 via-blue-50/80 to-blue-100/90 " style={{ opacity: 1 }}>
-          <h2 className="text-[16px] md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
             Nossos Templates de <span className="text-[#F5E927] font-black">Alta Conversão</span>
           </h2>
           <p className="text-[#170563] max-w-2xl mx-auto text-xl leading-relaxed font-serif">

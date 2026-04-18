@@ -80,7 +80,7 @@ const Hero = () => {
       />
 
       {/* OVERLAY GRADIENT (Tailwind v4) */}
-      <div className="absolute inset-0 bg-linear-to-b from-white-[#FAFAFF]/10 via-[#FAFAFF]/10 to-blue-100/80" />
+      <div className="absolute inset-0 bg-linear-to-b from-[#FAFAFF]/10 via-[#FAFAFF]/10 to-blue-100/80" />
 
       {/* CONTEÚDO */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -92,12 +92,12 @@ const Hero = () => {
               Foco em Dentistas do Rio de Janeiro 📍
             </span>
 
-            <h1 className="text-[5px] md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight bg-linear-to-b from-gray-200/80 via-[#6495ED]/70 to-blue-100/80 rounded-md  p-12">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight bg-linear-to-b from-gray-200/80 via-[#6495ED]/70 to-blue-100/80 rounded-md p-6 sm:p-8 md:p-10 lg:p-12">
               <span className="text-[#FFD800]">Atraia</span> novos clientes de sua região para seu consultório.
               <span className="text-[#FFD800]"> Foco em público do Rio de Janeiro.</span> Na <span className="font-dmserif text-blue-800">MK</span>ODONTO
             </h1>
 
-            <p className="font-playfair mt-6 text-[25px] text-[#010129] leading-relaxed bg-linear-to-b from-gray-200/80 via-[#6495ED]/70 to-blue-100/80 rounded-md  p-12">
+            <p className="font-playfair mt-6 text-lg sm:text-xl md:text-2xl lg:text-[25px] text-[#010129] leading-relaxed bg-linear-to-b from-gray-200/80 via-[#6495ED]/70 to-blue-100/80 rounded-md p-6 sm:p-8 md:p-10 lg:p-12">
               Como dentista no Rio de Janeiro, você sabe que a concorrência é feroz, e que sem uma presença digital forte, perde leads para quem já investe online.
               <span className="text-[#008000]"> <strong>Implementação rápida</strong></span>, com <span className="font-sans">1</span> ano de hospedagem e <span className="text-[#008000]"><strong>domínio grátis</strong></span> incluso.
             </p>
