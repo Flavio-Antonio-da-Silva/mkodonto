@@ -104,7 +104,7 @@ const Escolha = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho com Ref */}
-        <div ref={headerRef} className="text-center mb-20" style={{ opacity: 0 }}>
+        <div ref={headerRef} className="text-center mb-20 max-w-2xl mx-auto rp-3 p-8 rounded-full bg-linear-to-t  from-blue-50/50 via-blue-50/80 to-blue-100/90 " style={{ opacity: 1 }}>
           <h2 className="text-[16px] md:text-5xl text-[#191970] font-black mb-6 tracking-tight">
             Nossos Templates de <span className="text-[#F5E927] font-black">Alta Conversão</span>
           </h2>
@@ -127,7 +127,7 @@ const Escolha = () => {
                 ref={el => cardsRef.current[idx] = el}
                 onMouseMove={(e) => handleMouseMove(e, idx)}
                 onMouseLeave={() => handleMouseLeave(idx)}
-                className="group relative block rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden shadow-2xl"
+                className="group relative block rounded-2xl border border-slate-800 overflow-hidden shadow-2xl"
                 style={{ transformStyle: 'preserve-3d', opacity: 0 }} // Começa invisível para o ScrollTrigger
               >
                 {/* Banner de "Ver Site" no hover */}

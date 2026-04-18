@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import heroBg from "../assets/servicos_img/bg_servicos.jpeg"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -123,9 +124,22 @@ export default function Servicos() {
     <section
       ref={sectionRef}
       id="servicos"
-      className="py-24 bg-linear-to-t from-gray-500/10 via-blue-300 to-blue-100"
+      className="relative py-24 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      {/* BACKGROUND IMAGE */}
+      <img
+        src={heroBg}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-linear-to-b from-white-[#FAFAFF]/10 via-[#FAFAFF]/10 to-blue-100/80" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Cabeçalho */}
         <div ref={headerRef} className="max-w-4xl mx-auto text-center mb-20">
@@ -142,8 +156,8 @@ export default function Servicos() {
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {servicosData.map((item, index) => {
-            const DescriptionComponent = item.description as React.ComponentType
-            
+            const DescriptionComponent = item.description
+
             return (
               <div
                 key={index}

@@ -11,13 +11,10 @@ export default function VideoHero() {
               width: '100%', 
               height: '100%'
             }}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Ps8wh2SY9LA?si=6yOWF8b52IaxFeeB&start=8"
-            title="YouTube video player"
+            src="https://player.vimeo.com/video/1184340734?badge=0&autopause=0&player_id=0&app_id=58479&loop=1"
+            title="MKODONTO"
             frameBorder="0"
-            sandbox="allow-presentation allow-same-origin allow-scripts"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
