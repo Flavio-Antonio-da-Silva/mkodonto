@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const cases = [
-  { id: 1, imgName: 'case1.png', url: "https://aysha-dental-care.web.app/", nome: "Dental Care Premium" },
+  { id: 1, imgName: 'case1.jpeg', url: "https://clinica1-especial.vercel.app/", nome: "Dental Care Premium" },
   { id: 2, imgName: 'case2.png', url: "https://dental-clinic-ivory.vercel.app/", nome: "Soft" },
   { id: 3, imgName: 'case3.png', url: "https://dentics-landing.vercel.app/", nome: "Padrão" },
   { id: 4, imgName: 'case4.png', url: "https://dentalcare-zeta.vercel.app/", nome: "Objetivo" },
