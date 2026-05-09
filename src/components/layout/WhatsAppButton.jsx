@@ -22,7 +22,7 @@ export default function WhatsAppButton() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
       <a
-        href="https://wa.me/5521977496651?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MKODONTO%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+        href="https://wa.me/5521979138476?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MKODONTO%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
         target="_blank"
         rel="noopener noreferrer"
         className="

@@ -45,7 +45,7 @@ const Contato = () => {
 
               <div>
                 <a 
-                href="https://wa.me/21977496651?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20MK%20Dental%20para%20minha%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition-all shadow-md shadow-green-200 active:scale-95">
+                href="https://wa.me/21979138476?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20MK%20Dental%20para%20minha%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition-all shadow-md shadow-green-200 active:scale-95">
                  <img src="/whatsapp_icon.png" alt="WhatsApp" className="w-8 h-8 mr-2 inline-block" /> Clique para tirar qualquer dúvida via WhatApp
                 </a>
               </div>
