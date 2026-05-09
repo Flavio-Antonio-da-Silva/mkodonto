@@ -5,13 +5,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const cases = [
-  { id: 1, imgName: 'case1.jpeg', url: "https://clinica1-especial.vercel.app/", nome: "Dental Care Premium" },
-  { id: 2, imgName: 'case2.png', url: "https://dental-clinic-ivory.vercel.app/", nome: "Soft" },
-  { id: 3, imgName: 'case3.png', url: "https://dentics-landing.vercel.app/", nome: "Padrão" },
-  { id: 4, imgName: 'case4.png', url: "https://dentalcare-zeta.vercel.app/", nome: "Objetivo" },
-  { id: 5, imgName: 'case5.png', url: "https://gray-mafutala.github.io/dental-landing-page/", nome: "Minimalist" },
-  { id: 6, imgName: 'case6.png', url: "https://ampedent.atalek.com/", nome: "Ampedent Tech" },
-  { id: 7, imgName: 'case7.png', url: "https://dental-odonto-clinical.vercel.app/", nome: "Odonto Clinical" },
+  { id: 1, imgName: 'case1.jpeg', url: "https://clinica1-especial.vercel.app/", nome: "Padrão" },
+  { id: 2, imgName: 'case2.png', url: "https://dental-clinic-ivory.vercel.app/", nome: "Luxo" },
+  { id: 3, imgName: 'case3.png', url: "https://clinica-3-especial.vercel.app/", nome: "Básico" },
+  { id: 4, imgName: 'case4.png', url: "https://dentalcare-zeta.vercel.app/", nome: "Profissional" },
+  { id: 5, imgName: 'case5.png', url: "https://gray-mafutala.github.io/dental-landing-page/", nome: "Dinâmico" },
+  { id: 6, imgName: 'case6.png', url: "https://ampedent.atalek.com/", nome: "Imponente" },
+  { id: 7, imgName: 'case7.png', url: "https://dental-odonto-clinical.vercel.app/", nome: "Posicionamento" },
   { id: 8, imgName: 'case8.png', url: "https://consultorio-mocha.vercel.app/", nome: "Carismático" },
 ];
 
