@@ -8,7 +8,7 @@ const cases = [
   { id: 1, imgName: 'case1.jpeg', url: "https://clinica1-especial.vercel.app/", nome: "Padrão" },
   { id: 2, imgName: 'case2.jpg', url: " https://clinica-2-especial.vercel.app/", nome: "Luxo" },
   { id: 3, imgName: 'case3.png', url: "https://clinica-3-especial.vercel.app/", nome: "Básico" },
-  { id: 4, imgName: 'case4.png', url: "https://dentalcare-zeta.vercel.app/", nome: "Profissional" },
+  { id: 4, imgName: 'case4.png', url: "https://clinica-4-especial.vercel.app/", nome: "Profissional" },
   { id: 5, imgName: 'case5.png', url: "https://gray-mafutala.github.io/dental-landing-page/", nome: "Dinâmico" },
   { id: 6, imgName: 'case6.png', url: "https://ampedent.atalek.com/", nome: "Imponente" },
   { id: 7, imgName: 'case7.png', url: "https://dental-odonto-clinical.vercel.app/", nome: "Posicionamento" },
